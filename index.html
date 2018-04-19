@@ -8,11 +8,21 @@
     body {
       margin: 0; padding: 0;
     }
+    body {
+      background: #effaff;
+    }
     h1,
-    p {
+    p,
+    i,
+    a:hover {
       color:  #00a8d2;
       line-height: 0.2;
-      text-shadow: 4px 3px 4px rgba(150, 150, 150, 0.5)
+      text-shadow: 4px 3px 4px rgba(150, 150, 150, 0.5);
+    }
+    i a, i {
+      pointer-events: all;
+      color:  #7d7d7d;
+      text-decoration: none;
     }
     section#main-header {
       position: absolute;
@@ -24,14 +34,13 @@
       -khtml-user-select: none;
       -webkit-user-select: none;
       -o-user-select: none;
-
     }
   </style>
  </head>
  <body>
   <section id="main-header">
     <h1 id="main-header">Ivan Rogov</h1>
-    <p>Coming Soon</p>
+    <p>Frontpage of my <i>· <a href="https://github.com/xlazex">GitHub</a> ·</i> account</p>
   </section>
  </body>
 </html>

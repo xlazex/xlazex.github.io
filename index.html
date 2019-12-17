@@ -1,59 +1,144 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Ivan Rogov</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6ecaf3">
-  <meta name="msapplication-TileColor" content="#6ecaf3">
-  <meta name="theme-color" content="#6ecaf3">
-  <meta property="og:image:width" content="1333">
-  <meta property="og:image:height" content="2000">
-  <meta property="og:title" content="Ivan Rogov">
-  <meta property="og:url" content="https://rogov.tech">
-  <meta property="og:image" content="https://rogov.tech/images/og-image.jpg">
-  <meta property="og:description" content="Привет">
-  <style>
-    html,
-    body {
-      margin: 0; padding: 0;
-    }
-    body {
-      background: #effaff;
-    }
-    h1,
-    p,
-    i,
-    a:hover {
-      color:  #00a8d2;
-      line-height: 0.2;
-      text-shadow: 4px 3px 4px rgba(150, 150, 150, 0.5);
-    }
-    i a, i {
-      pointer-events: all;
-      color:  #7d7d7d;
-      text-decoration: none;
-    }
-    section#main-header {
-      position: absolute;
-      top: 45%;
-      left: 5%;
-      pointer-events: none;
-      user-select: none;
-      -moz-user-select: none;
-      -khtml-user-select: none;
-      -webkit-user-select: none;
-      -o-user-select: none;
-    }
-  </style>
- </head>
- <body>
-  <section id="main-header">
-    <h1 id="main-header">Ivan Rogov</h1>
-    <p>Frontpage of my <i>· <a href="https://github.com/xlazex">GitHub</a> ·</i> account</p>
-  </section>
- </body>
+
+<head>
+	<meta charset="utf-8">
+	<title>Ivan Rogov</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6ecaf3">
+	<meta name="msapplication-TileColor" content="#6ecaf3">
+	<meta name="theme-color" content="#6ecaf3">
+	<meta property="og:image:width" content="1333">
+	<meta property="og:image:height" content="2000">
+	<meta property="og:title" content="Ivan Rogov">
+	<meta property="og:url" content="https://rogov.tech">
+	<meta property="og:image" content="https://rogov.tech/images/og-image.jpg">
+	<meta property="og:description" content="Ivan Rogov">
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			pointer-events: none;
+			user-select: none;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-o-user-select: none;
+		}
+
+		body {
+			background: #effaff;
+		}
+
+		h1,
+		p,
+		i,
+		a:hover {
+			color: #00a8d2;
+			line-height: 0.2;
+			text-shadow: 4px 3px 4px rgba(150, 150, 150, 0.5);
+		}
+
+		i a,
+		i {
+			pointer-events: all;
+			color: #7d7d7d;
+			text-decoration: none;
+		}
+
+		header#main-header {
+			position: relative;
+			margin: 10% 0 0 0;
+			padding: 0 5%;
+			width: 90%;
+			background-color: #effaff;
+			float: left;
+		}
+
+		section#main-section {
+			position: relative;
+			margin: 5% 0 0 0;
+			padding: 0 5%;
+			width: 90%;
+			background-color: #effaff;
+			float: left;
+		}
+
+		footer#main-footer {
+			position: relative;
+			margin: 10% 0 0 0;
+			padding: 0 5%;
+			width: 90%;
+			background-color: #effaff;
+			float: left;
+		}
+
+		p#copy {
+			position: relative;
+			text-align: left;
+			color: #73878d;
+		}
+
+		ul.tiles {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+
+			-webkit-flex-flow: row wrap;
+			justify-content: space-around;
+		}
+
+		li.tiles-item {
+			background: white;
+			padding: 5px;
+			width: 450px;
+			height: 150px;
+			margin-top: 15px;
+
+			line-height: 150px;
+			color: #959595;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+			border-radius: 15px;
+			box-shadow: 0px 6px 10px rgba(150, 150, 150, 0.5);
+		}
+
+		li.tiles-item:hover {
+			box-shadow: 0px 3px 7px rgba(150, 150, 150, 0.5);
+		}
+	</style>
+</head>
+
+<body>
+	<header id="main-header">
+		<h1 id="main-header">Ivan Rogov</h1>
+	</header>
+	<section id="main-section">
+		<ul class="tiles">
+			<li class="tiles-item">1</li>
+			<li class="tiles-item">2</li>
+			<li class="tiles-item">3</li>
+			<li class="tiles-item">4</li>
+			<li class="tiles-item">5</li>
+			<li class="tiles-item">6</li>
+			<li class="tiles-item">7</li>
+			<li class="tiles-item">...</li>
+		</ul>
+	</section>
+	<footer id="main-footer">
+		<p id="copy">&copy; 2019 - 2020, Ivan Rogov (rogov.tech)</p>
+	</footer>
+</body>
+
 </html>
